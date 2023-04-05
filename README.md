@@ -1,67 +1,65 @@
-# Ruby Course
+# Project Name
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+Morse Code Message
 
-## Set-up Rubocop GitHub Action
+# Description the project.
 
-[Rubocop](https://www.rubocop.org/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
+Simple Decoder for Morse messages.
 
-This GitHub Action is going to run [Rubocop](https://docs.rubocop.org/en/stable/) to help you find style issues.
+## Built With
 
-Please do the following **steps in this order**:
+- Languages: Ruby
+- Frameworks: N/A
+- Technologies Used: GIT, GITHUB, LINTERS
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+## Getting Started
 
-![gh actions checks](../assets/images/gh-actions-rubocop-linters-checks.png)
+- Clone this repo <https://github.com/Johnadibe/decode_morse_code.git>
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+  ```bash
+  git clone https://github.com/Johnadibe/decode_morse_code.git
+  ```
 
-![gh actions failing checks](../assets/images/gh-actions-rubocop-failing-checks.png)
+- Navigate to decode_morse_code folder/directory
 
-## [OPTIONAL]Set-up RSpec GitHub Action
+  ```bash
+  cd decode_morse_feature
+  ```
 
-You can run your tests with GitHub Actions to ensure that they are passing before merging a PR.
+- On the command line, at the project's root, run `bundle install` to install app dependencies
 
-To use the GitHub Action to run your tests, please do the following **steps in this order**:
+- Next, run `ruby decode_morse_code.rb` which will run the app in the development mode.
 
-1. Add a copy of [`.github/workflows/tests.yml`](.github/workflows/tests.yml) to your `.github/workflows` folder.
-    - **Remember** to use the file linked above
-    - Do not modify or delete the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) file that should already be in that folder.
-    - RSpec by default will try to run any file ending in `_spec.rb` inside the `spec` folder. Make sure to follow this convention for your tests files so `rspec` can run your spec files.
-    - You can modify the [`.github/workflows/tests.yml`](.github/workflows/tests.yml) file to better fit your custom needs.
-3. When you open your pull request you should see the result of the GitHub Action:
+## Authors
 
-![gh actions checks](../assets/images/gh-actions-rspec-tests-checks.png)
+👤 **John Adibe**
 
-Click on the `Details` link of the test action to check the results of your tests.
+- GitHub: [@Johnadibe](https://github.com/Johnadibe)
+- Twitter: [@JohnAdibe2](https://twitter.com/JohnAdibe2)
+- LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe/)
 
-## Set-up linters in your local env
+👤 **Ram Kumar Karuppusamy**
 
-### [RuboCop](https://docs.rubocop.org/en/stable/)
+- GitHub: [@ram1117](https://github.com/ram1117)
+- LinkedIn: [@John Adibe](https://www.linkedin.com/in/ram-kumar-karuppusamy/)
 
-1. Add this line to the `Gemfile`
-    ```
-    gem 'rubocop', '>= 1.0', '< 2.0'
-    ```
-    *not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html).*
-2. Run `bundle install`.
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
-4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`.
-6. Fix linter errors.
-7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+## 🤝 Contributing
 
-## Troubleshooting
+Contributions, issues, and feature requests are welcome!
+thanks: [issue-link](https://github.com/Johnadibe/decode_morse_code/issues)
 
-- While using Colorize gem, if you are facing errors with Rspec related to 
-    ```bash
-    LoadError:
-    cannot load such file -- colorize
-    ```
-    please remove ```--deployment``` from line no. [26](https://github.com/shubham14p3/Ruby-capstone-project/blob/ca86784cc88bea7c933e329c0953f07e21bcf6ca/.github/workflows/tests.yml#L16) of test.yml file.
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- LazyCoders
+- Coding Partners
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
