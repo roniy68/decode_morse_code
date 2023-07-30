@@ -16,6 +16,24 @@ To report a security issue, please follow these steps:
 
 Please note that this security policy applies to the official releases of decode_morse_code. If you are using a modified or third-party version, please reach out to the respective maintainers for their security policy.
 
+# Supported Versions
 
+We strive to provide security updates for the latest release of decode_morse_code and the previous stable release. It's highly recommended to keep your installation up to date with the latest version to benefit from the latest security patches and improvements.
+
+# Security Best Practices
+
+While we actively maintain the security of decode_morse_code, we also encourage users and contributors to follow these best practices to enhance the security of their own deployments:
+
+- Keep decode_morse_code and its dependencies up to date with the latest security patches.
+- Enable authentication, authorization, and strong password policies to protect user accounts.
+- Regularly backup your data to prevent data loss in case of any unforeseen incidents.
+- Restrict server access and permissions to authorized personnel only.
+- Review and test custom code or third-party integrations for potential vulnerabilities.
+
+By following these practices and promptly reporting any security concerns, we can collectively maintain a secure environment for all decode_morse_code users.
+
+Thank you for your help in making decode_morse_code a safe and secure project!
+
+Email : [ahr@drsight.us](mailto:ahr@drsight.us)
 
 
